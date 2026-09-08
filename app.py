@@ -486,8 +486,9 @@ elif st.session_state.page == "Scenario":
 
     st.header("1. The Situation")
 
-    st.write(
-        scenario["situation"]
+    st.markdown(
+        f"<div style='font-size: 24px; line-height: 1.7;'>{scenario['situation']}</div>",
+        unsafe_allow_html=True
     )
 
     st.divider()
