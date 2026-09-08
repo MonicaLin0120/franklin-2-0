@@ -513,31 +513,51 @@ elif st.session_state.page == "Scenario":
     )
 
     with st.expander(
-        "📖 2. Connection to Franklin"
+    "📖 2. Connection to Franklin"
     ):
         st.markdown(
-            scenario["connection"]
+            f"""
+            <div style="font-size: 24px; line-height: 1.7;">
+            {scenario["connection"].strip().replace(chr(10), "<br>")}
+            </div>
+            """,
+            unsafe_allow_html=True
         )
 
     with st.expander(
         "🤔 3. Franklin's Solution"
     ):
         st.markdown(
-            scenario["franklin"]
+            f"""
+            <div style="font-size: 24px; line-height: 1.7;">
+            {scenario["franklin"].strip().replace(chr(10), "<br>")}
+            </div>
+         """,
+            unsafe_allow_html=True
         )
 
     with st.expander(
         "💡 4. Our Modern Solution"
     ):
         st.markdown(
-            scenario["modern"]
+            f"""
+            <div style="font-size: 24px; line-height: 1.7;">
+            {scenario["modern"].strip().replace(chr(10), "<br>")}
+            </div>
+            """,
+            unsafe_allow_html=True
         )
 
     with st.expander(
         "❓ 5. The Complication"
     ):
         st.markdown(
-            scenario["complication"]
+            f"""
+            <div style="font-size: 24px; line-height: 1.7;">
+            {scenario["complication"].strip().replace(chr(10), "<br>")}
+            </div>
+            """,
+            unsafe_allow_html=True
         )
 
     st.divider()
