@@ -5,6 +5,14 @@ st.set_page_config(
     page_icon="📜",
     layout="wide"
 )
+st.markdown("""
+<style>
+div[data-testid="stExpander"] summary * {
+    font-size: 22px !important;
+    font-weight: 600 !important;
+}
+</style>
+""", unsafe_allow_html=True)
 
 # ---------------------------------------------------------
 # DATA
